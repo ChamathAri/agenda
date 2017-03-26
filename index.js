@@ -25,6 +25,6 @@ var agenda = module.exports = require('./lib/agenda.js');
 //
 //
 // agenda.on('ready', function () {
-//     agenda.every('0/1 * 1/1 * ? *', message, "Avenger's Data", {timezone: 'Asia/Colombo'});
+//     agenda.every('30 8 ? * MON,TUE,WED$4 *', message, "Avenger's Data", {timezone: 'Asia/Colombo'});
 //     agenda.start();
 // });
