@@ -1,7 +1,7 @@
 var agenda = module.exports = require('./lib/agenda.js');
 
-//var Agenda = require('./lib/agenda.js');
-
+// var Agenda = require('./lib/agenda.js');
+//
 // var mongoConnectionString = "mongodb://wf:wf@ds119370.mlab.com:19370/jobs";
 // var agenda = new Agenda({
 //     db: {address: mongoConnectionString, collection: "agendaJobs"},
@@ -25,6 +25,6 @@ var agenda = module.exports = require('./lib/agenda.js');
 //
 //
 // agenda.on('ready', function () {
-//     agenda.every('30 8 ? * MON,TUE,WED$4 *', message, "Avenger's Data", {timezone: 'Asia/Colombo'});
+//     agenda.every('30 8 ? * SUN,MON,THU,FRI,SAT$1 *||WEEKS', message, "Avenger's Data", {timezone: 'Asia/Colombo'});
 //     agenda.start();
 // });
